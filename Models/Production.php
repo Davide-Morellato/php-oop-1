@@ -15,15 +15,14 @@ class Production{
 
     //
     //BONUS
-    //dichiaro la proprietà $genre e $description
+    //dichiaro la proprietà $genre
     public $genre;
-    public $description;
 
     //4.creo una funzione __construct per assegnare i valori alla classe
     //
     //BONUS
-    //includo nel COSTRUTTORE la classe Genre con il rispettivo $_genre e $_description
-    function __construct($_title, $_language, $_vote, Genre $_genre, Genre $_description)
+    //includo nel COSTRUTTORE la classe Genre (che al suo interno presenta le proprietà $name & description) assegnandola alla proprietà $genre
+    function __construct($_title, $_language, $_vote, Genre $_genre)
     {
         //sfrutto il "$this->" per accedere alla variabile di istanza
         //per assegnargli un valore, passandoglielo come parametro,
@@ -33,9 +32,8 @@ class Production{
         $this->vote = $_vote;
 
         //BONUS
-        //richiamo la proprietà $genre e $description
+        //richiamo la proprietà $genre
         $this->genre = $_genre;
-        $this->description = $_description;
     }
     
 }

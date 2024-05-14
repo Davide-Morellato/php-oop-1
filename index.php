@@ -64,10 +64,10 @@ require_once __DIR__ . '/db_istanze.php';
                                 <?= $film->length; ?>
                             </td>
                             <td>
-                                <?= $film->genre->genre; ?>
+                                <?= $film->genre->name; ?>
                             </td>
                             <td>
-                                <?= $film->description->genre; ?>
+                                <?= $film->genre->getDescription(); ?>
                             </td>
                         </tr>
                     <?php } ?>
@@ -105,10 +105,10 @@ require_once __DIR__ . '/db_istanze.php';
                                 <?= $serie->seasons; ?>
                             </td>
                             <td>
-                                <?= $film->genre->genre; ?>
+                                <?= $serie->genre->getName(); ?>
                             </td>
                             <td>
-                                <?= $film->description->genre; ?>
+                                <?= $serie->genre->description; ?>
                             </td>
                         </tr>
                     <?php } ?>

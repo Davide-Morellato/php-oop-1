@@ -12,9 +12,20 @@
             $this->profit = $_profit;
         }
 
-        //4.creo un metodo GETTER per invocare il valore
+        //4.creo un metodo SETTER per impostare il valore
+        public function setLength($_length){
+            $this->length = $_length;
+        }
+
+        //5.creo un metodo GETTER per invocare il valore
         public function getProfit(){
             return $this->profit;
+        }
+
+
+        //6.creo un metodo GETTER per invocare il valore
+        public function getLength(){
+            return $this->length;
         }
 
     }
